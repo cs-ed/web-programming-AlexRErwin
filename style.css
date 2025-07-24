@@ -3,7 +3,8 @@ body {
 
 }
 
-h3 {
-  font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+h1, h2, h3, h4 {
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   color: rgb(0, 102, 204);
 }

@@ -27,3 +27,17 @@ p {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.outcome_blocks {
+  display: inline-block;
+  width: 45%;
+  align-self:center;
+  text-align:center;
+  background-color: lightskyblue;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  border: 0.5em solid black;
+  padding:  1em;
+}

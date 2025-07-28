@@ -41,3 +41,7 @@ p {
   border: 0.25em solid gold;
   padding:  1em;
 }
+
+a:hover{
+  color: rgb(0, 102, 204);
+}

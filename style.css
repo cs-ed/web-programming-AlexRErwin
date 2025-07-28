@@ -32,7 +32,7 @@ p {
   display: inline-block;
   width: 45%;
   align-self:center;
-  text-align:center;
+  text-align:left;
   background-color: lightskyblue;
   margin-left: 0.5em;
   margin-right: 0.5em;

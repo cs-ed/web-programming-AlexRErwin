@@ -11,4 +11,4 @@ window.onload = function() {
 
 document.getElementById("new_option").addEventListener("click", function()) {
   console.log("Requesting new option...");
-}
+};

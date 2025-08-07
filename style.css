@@ -45,3 +45,8 @@ p {
 a:hover{
   color: #FFFFFF;
 }
+
+.errors {
+  color: red;
+  font-weight: bold;
+}

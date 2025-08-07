@@ -16,7 +16,7 @@ window.onload = function() {
     console.log("Option at location " + index + " is: " + quote_collection[index]);
   }
     */
-   for(let option of quote_collection) {
+  for(let option of quote_collection) {
     console.log("Option is: " + option);
   getNewOption();
    };
@@ -25,9 +25,13 @@ window.onload = function() {
 document.getElementById("new_option").addEventListener("click", getNewOption);
 
 document.getElementById("add_goal").addEventListener("click", function() {
+  if(document.getElementById("goal_input").value != "") {
   const goal_block = document.createElement("div");
   goal_block.className = "outcome_blocks";
   goal_block.innerHTML = document.getElementById("goal_input").value;
 
   document.getElementById("my_goals").appendChild(goal_block);
+  }else {
+    document.getElementById("goal_error").innerHTML = "Please enter a goal before adding.";
+  }
 });

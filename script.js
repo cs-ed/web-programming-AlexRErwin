@@ -25,13 +25,17 @@ window.onload = function() {
 document.getElementById("new_option").addEventListener("click", getNewOption);
 
 document.getElementById("add_goal").addEventListener("click", function() {
-  if(document.getElementById("goal_input").value != "") {
-  const goal_block = document.createElement("div");
-  goal_block.className = "outcome_blocks";
-  goal_block.innerHTML = document.getElementById("goal_input").value;
-
-  document.getElementById("my_goals").appendChild(goal_block);
-  }else {
+  const input_length = document.getElementById("goal_input").value.length;
+  if( input_length >= 10) {
+    const goal_block = document.createElement("div");
+    goal_block.className = "outcome_blocks";
+    goal_block.innerHTML = document.getElementById("goal_input").value;
+    document.getElementById("my_goals").appendChild(goal_block);
+    document.getElementById("goal_error").innerHTML = "";
+    document.getElementById("goal_input").value = "";
+  }else if(input_length < 10 && input_length > 0 ){
+    document.getElementById("goal_error").innerHTML = "Please enter a goal of at least 10 characters.";
+  }else{
     document.getElementById("goal_error").innerHTML = "Please enter a goal before adding.";
   }
 });
